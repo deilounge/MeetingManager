@@ -1,0 +1,43 @@
+<div th:replace="header"></div>
+<nav class="navbar navbar-dark bg-dark">
+    <!-- Navbar content -->
+  </nav>
+  
+  <nav class="navbar navbar-dark bg-primary">
+    <!-- Navbar content -->
+  </nav>
+  
+  <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+    <!-- Navbar content -->
+  </nav>
+    <table class="table table-dark">
+        <tr>
+            <th></th>
+            <th>Nazwa spotkania</th>
+            <th>Spółka</th>
+            <th>Typ spotkania</th>
+            <th>Adres</th>
+            <th>Uwagi</th>
+            <th>Data</th>
+            <th>Godzina</th>
+        </tr>
+        <tr th:each="meeting : ${meetings}">
+            <td><input type="checkbox"></td>
+            <td th:text="${meeting.title}"></td>
+            <td th:text="${meeting.company}"></td>
+            <td th:text="${meeting.type}"></td>
+            <td th:text="${meeting.address}"></td>
+            <td th:text="${meeting.description}"></td>
+            <td th:text="${meeting.date}"></td>
+            <td th:text="${meeting.time}"></td>
+        </tr>
+        <tr>
+            <td colspan="8" style="text-align: right"> 
+                <a href="/" class="btn btn-primary">Powrót do strony głównej!</a>
+            </td>
+        </tr>
+    </table>
+
+
+   
+    <div th:replace="footer"></div>
