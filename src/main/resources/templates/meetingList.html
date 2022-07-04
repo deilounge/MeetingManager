@@ -1,15 +1,17 @@
 <div th:replace="header"></div>
-<nav class="navbar navbar-dark bg-dark">
-    <!-- Navbar content -->
+  <nav class="navbar navbar-dark">
+    <div class="h5 text-secondary" style="">Strona główna</div>
+    <div class="h5 text-secondary" style="">Lista</div>
+    <div class="h5 text-secondary" style="">Strona główna</div>
+    <div class="h5 text-secondary" style="">Strona główna</div>
+    <div class="h5 text-secondary">Strona główna</div>
   </nav>
   
-  <nav class="navbar navbar-dark bg-primary">
-    <!-- Navbar content -->
+  <!--<nav class="navbar navbar-dark bg-primary">
   </nav>
   
   <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
-    <!-- Navbar content -->
-  </nav>
+  </nav>-->
   <br>
   <i class="bi bi-alarm"></i>
     <table class="table">
@@ -40,6 +42,6 @@
         </tr>
     </table>
 
-
+    <div th:text="${test}"></div>
    
     <div th:replace="footer"></div>
